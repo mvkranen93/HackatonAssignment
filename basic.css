@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-size: 14pt;
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 18pt;
+}
+
+h3 {
+  font-size: 24pt;
+  margin: 20px 0 20px 0;
+}
+
+h4 {
+  font-size: 18pt;
+  color: black;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0 10px 0;
+}
+
+h5 {
+  font-size: 24pt;
+  margin: 20px 0 0 0;
+}
+
+p {
+  font-size: 16pt;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.grid-item {
+  display: grid;
+  color: black;
+  font-family: "Courgette", cursive;
+  font-size: 1.3em;
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: h;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+/* Navigatie */
+.navigatie {
+  grid-area: n;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.navigatie ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigatie li {
+  display: inline;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: grey;
+  font-family: "Courgette", cursive;
+}
+
+.nav-link:hover {
+  color: #b68787;
+}
+
+.current-page h2 {
+  color: #b68787;
+  border-bottom: 2px solid #b68787;
+}
+
+.banner {
+  grid-area: b;
+  height: 100%;
+  background-size: cover; /* <-- background size */
+  background-position: center; /* <-- background position */
+}
+
+.main {
+  grid-area: m;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #b68787;
+  padding: 0;
+}
+
+.footer {
+  grid-area: f;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(32, 32, 32);
+  padding: 30pt 0 0 0;
+  color: white;
+}
+
+.footer-box {
+  width: 150px;
+  height: 100px;
+  font-size: 11pt;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-family: "Courgette", cursive;
+}
+
+.footer a:hover {
+  color: #b68787;
+}
+
+/* Media querie voor mobiel*/
+@media (min-width: 320px) {
+  .grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px 300px auto 250px;
+    grid-template-areas:
+      "h"
+      "n"
+      "b"
+      "m"
+      "f";
+  }
+}
+
+/* Media querie voor desktop*/
+@media (min-width: 1024px) {
+  .grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 500px auto 230px;
+    grid-template-areas:
+      "h h h h n n n n n n n n"
+      "b b b b b b b b b b b b"
+      "m m m m m m m m m m m m"
+      "f f f f f f f f f f f f";
+  }
+}

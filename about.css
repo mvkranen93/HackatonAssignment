@@ -1,0 +1,43 @@
+.main {
+  grid-area: m;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #b68787;
+  padding: 0;
+  width: 100%;
+}
+
+.main-box {
+  display: flex;
+  flex-basis: 80%;
+  margin: 40px 10px 40px 10px;
+  background-color: rgb(240, 215, 206);
+
+  border: 1px black solid;
+  border-right: 3px black solid;
+  border-radius: 25px;
+
+  background-size: cover; /* <-- background size */
+  background-position: center; /* <-- background position */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+  font-size: 0.7em;
+}
+
+.container-box {
+  width: 50%;
+}
+
+.picture {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}

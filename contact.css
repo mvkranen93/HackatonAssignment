@@ -1,0 +1,82 @@
+.main {
+  grid-area: m;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #b68787;
+  padding: 0;
+  width: 100%;
+}
+
+.main-box {
+  display: flex;
+  flex-basis: 80%;
+  margin: 40px 10px 40px 10px;
+  background-color: rgb(240, 215, 206);
+
+  border: 1px black solid;
+  border-right: 3px black solid;
+  border-radius: 25px;
+
+  background-size: cover; /* <-- background size */
+  background-position: center; /* <-- background position */
+}
+
+/* FORMULIER */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.form-box {
+  width: 50%;
+}
+
+label {
+  font-size: 0.9em;
+}
+
+input {
+  display: block;
+  width: 70%;
+  height: 25px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+input[type="reset"] {
+  display: inline-block;
+  width: 30%;
+  height: 35px;
+  margin-top: 2em;
+  margin-right: 2em;
+  border-radius: 6px;
+  font-family: "Courgette", cursive;
+  font-size: 0.7em;
+  color: #fff;
+  background-color: #b68787;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  width: 30%;
+  height: 35px;
+  margin-top: 2em;
+  border-radius: 6px;
+  font-family: "Courgette", cursive;
+  font-size: 0.7em;
+  color: #fff;
+  background-color: black;
+}
+
+textarea {
+  display: block;
+  min-height: 20em;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-color: rgb(180, 179, 179);
+}
